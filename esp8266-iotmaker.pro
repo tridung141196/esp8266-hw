@@ -1,4 +1,4 @@
-update=Thứ ba, 24 Tháng mười Năm 2017 10:13:31 ICT
+update=Thứ tư, 25 Tháng mười Năm 2017 13:16:03 ICT
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,9 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=lib/ESP8266
+LibName31=switches
+LibName32=lib/CP2102
+LibName33=lib/usb_mini_b
+LibName34=lib/AMS1117-3.3
+LibName35=lib/25q32
+LibName36=lib/MOSFET-P

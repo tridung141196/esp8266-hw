@@ -1,4 +1,4 @@
-update=Thứ sáu, 27 Tháng mười Năm 2017 12:17:17 ICT
+update=Thứ năm, 02 Tháng mười một Năm 2017 11:42:49 ICT
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,8 +61,8 @@ LibName29=valves
 LibName30=lib/ESP8266
 LibName31=switches
 LibName32=lib/CP2102
-LibName33=lib/25q32
-LibName34=lib/MOSFET-P
-LibName35=lib/mcp73831
-LibName36=lib/ams1117-3
-LibName37=lib/usb_mini_b
+LibName33=lib/MOSFET-P
+LibName34=lib/mcp73831
+LibName35=lib/ams1117-3
+LibName36=lib/usb_mini_b
+LibName37=lib/25q32

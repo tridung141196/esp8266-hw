@@ -157,7 +157,7 @@ U 1 1 59EEB9A0
 P 6900 2050
 F 0 "SW1" H 6950 2150 50  0000 L CNN
 F 1 "SW_Push" H 6900 1990 50  0000 C CNN
-F 2 "esp8266:tactile switches" H 6900 2250 50  0001 C CNN
+F 2 "esp8266:nut_nhan_ngang" H 6900 2250 50  0001 C CNN
 F 3 "" H 6900 2250 50  0001 C CNN
 	1    6900 2050
 	0    1    1    0   
@@ -168,7 +168,7 @@ U 1 1 59EEBA21
 P 7500 2000
 F 0 "SW2" H 7550 2100 50  0000 L CNN
 F 1 "SW_Push" H 7500 1940 50  0000 C CNN
-F 2 "esp8266:tactile switches" H 7500 2200 50  0001 C CNN
+F 2 "esp8266:nut_nhan_ngang" H 7500 2200 50  0001 C CNN
 F 3 "" H 7500 2200 50  0001 C CNN
 	1    7500 2000
 	0    1    1    0   
@@ -797,35 +797,31 @@ Text GLabel 8350 5400 2    60   Input ~ 0
 TXD
 Text GLabel 8350 5300 2    60   Input ~ 0
 RXD
-Text GLabel 9450 5400 2    60   Input ~ 0
+Text GLabel 9450 5800 2    60   Input ~ 0
 REST
-Text GLabel 9450 5300 2    60   Input ~ 0
-EN
-Text GLabel 9450 5000 2    60   Input ~ 0
-ADC_EX
-Text GLabel 9450 4900 2    60   Input ~ 0
-GPIO16
-Text GLabel 9450 5500 2    60   Input ~ 0
-GPIO0
 Text GLabel 9450 5600 2    60   Input ~ 0
+EN
+Text GLabel 9450 5700 2    60   Input ~ 0
+ADC_EX
+Text GLabel 9450 5500 2    60   Input ~ 0
+GPIO16
+Text GLabel 9450 5300 2    60   Input ~ 0
+GPIO0
+Text GLabel 9450 5400 2    60   Input ~ 0
 GPIO2
 Text GLabel 9450 5200 2    60   Input ~ 0
 3V3
 $Comp
 L GND #PWR015
 U 1 1 59F32D9B
-P 9800 5150
-F 0 "#PWR015" H 9800 4900 50  0001 C CNN
-F 1 "GND" H 9800 5000 50  0000 C CNN
-F 2 "" H 9800 5150 50  0001 C CNN
-F 3 "" H 9800 5150 50  0001 C CNN
-	1    9800 5150
+P 10050 5200
+F 0 "#PWR015" H 10050 4950 50  0001 C CNN
+F 1 "GND" H 10050 5050 50  0000 C CNN
+F 2 "" H 10050 5200 50  0001 C CNN
+F 3 "" H 10050 5200 50  0001 C CNN
+	1    10050 5200
 	-1   0    0    -1  
 $EndComp
-Text Notes 10900 6000 2    79   ~ 16
-SOURCE
-Text Notes 9650 6350 2    79   ~ 16
-OLED
 $Comp
 L GND #PWR016
 U 1 1 59F3750D
@@ -899,16 +895,6 @@ F 3 "" H 900 2250 50  0001 C CNN
 	1    900  2250
 	1    0    0    -1  
 $EndComp
-Text Notes 8800 5250 0    60   ~ 0
-SCK
-Text Notes 8800 5150 0    60   ~ 0
-MISO
-Text Notes 8800 4950 0    60   ~ 0
-MOSI
-Text Notes 8800 5050 0    60   ~ 0
-SS
-Text Notes 7550 5950 0    60   ~ 0
-ADC IN
 Wire Wire Line
 	7500 1650 7500 1800
 Wire Wire Line
@@ -1326,11 +1312,7 @@ Wire Wire Line
 Wire Wire Line
 	9450 5200 9350 5200
 Wire Wire Line
-	9350 5100 9800 5100
-Wire Wire Line
-	9450 5000 9350 5000
-Wire Wire Line
-	9450 4900 9350 4900
+	9350 4900 10050 4900
 Wire Wire Line
 	7500 2200 7500 2300
 Wire Wire Line
@@ -1348,8 +1330,6 @@ Wire Wire Line
 Wire Wire Line
 	900  2250 900  2200
 Connection ~ 10850 2450
-Wire Wire Line
-	9800 5100 9800 5150
 $Comp
 L CP1 C12
 U 1 1 59F9F26A
@@ -1445,19 +1425,8 @@ F 3 "" H 8700 5750 50  0001 C CNN
 	1    8700 5750
 	1    0    0    -1  
 $EndComp
-Text GLabel 9450 5700 2    60   Input ~ 0
-VUSB
-$Comp
-L GND #PWR020
-U 1 1 59FB00DA
-P 9800 5850
-F 0 "#PWR020" H 9800 5600 50  0001 C CNN
-F 1 "GND" H 9800 5700 50  0000 C CNN
-F 2 "" H 9800 5850 50  0001 C CNN
-F 3 "" H 9800 5850 50  0001 C CNN
-	1    9800 5850
-	1    0    0    -1  
-$EndComp
+Text GLabel 9450 5100 2    60   Input ~ 0
+VCC
 Text GLabel 1450 4750 0    60   Input ~ 0
 VUSB
 Text GLabel 1850 4750 2    60   Input ~ 0
@@ -1505,12 +1474,17 @@ Wire Wire Line
 Wire Wire Line
 	9350 5700 9450 5700
 Wire Wire Line
-	9350 5800 9800 5800
-Wire Wire Line
-	9800 5800 9800 5850
-Wire Wire Line
 	3200 7300 3200 7450
 Wire Wire Line
 	3200 7450 3300 7450
 Connection ~ 3300 7450
+Wire Wire Line
+	10050 4900 10050 5200
+Wire Wire Line
+	9450 5800 9350 5800
+Wire Wire Line
+	9450 5100 9350 5100
+Wire Wire Line
+	9350 5000 10050 5000
+Connection ~ 10050 5000
 $EndSCHEMATC

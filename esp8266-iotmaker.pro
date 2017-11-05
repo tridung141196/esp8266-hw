@@ -1,4 +1,4 @@
-update=Thứ năm, 02 Tháng mười một Năm 2017 11:42:49 ICT
+update=Chủ nhật, 05 Tháng mười một Năm 2017 14:08:01 ICT
 version=1
 last_client=kicad
 [pcbnew]
@@ -66,3 +66,13 @@ LibName34=lib/mcp73831
 LibName35=lib/ams1117-3
 LibName36=lib/usb_mini_b
 LibName37=lib/25q32
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

@@ -32,7 +32,7 @@ ESP8266 IOTMAKERVN:
 
 ### Gerber
 
-[Download](./assets/esp8266.zip)
+[Download](./assets/esp8266-1x1.86inch.zip)
 
 ### BOM 
 
